@@ -1,0 +1,80 @@
+.new-bamboo-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  h2 {
+    font-weight: 700;
+    margin: 0;
+  }
+  p {
+    margin: 5px;
+  }
+  text-align: center;
+}
+
+.new-bamboo-form {
+  label {
+    font-family: "Noto Sans Kr", sans-serif;
+    font-size: 15px;
+  }
+  input {
+    border: 1px solid #acacac;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 15px;
+    color: var(--text-color);
+  }
+  textarea {
+    border: 1px solid #acacac;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    height: 200px;
+    resize: none;
+    padding: 10px 20px;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 15px;
+  }
+  button {
+    &:disabled {
+      background-color: #b9bcfc;
+      cursor: inherit;
+    }
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    background-color: #525af6;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  width: 80%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.set-anon {
+  input {
+    margin-right: 15px;
+  }
+  display: flex;
+  align-items: center;
+}

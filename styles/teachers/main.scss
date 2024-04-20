@@ -1,0 +1,26 @@
+h1 {
+  font-size: 50px;
+  margin: 0;
+  font-weight: 900;
+}
+
+.background {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.teachers {
+  a {
+    span {
+      font-style: italic;
+    }
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 30px;
+  }
+  text-align: center;
+}

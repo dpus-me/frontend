@@ -1,0 +1,25 @@
+.meals-container {
+  margin-top: 30px;
+}
+
+.current-meal {
+  h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  p {
+    font-size: 12px;
+    margin: 0;
+    margin-top: 5px;
+  }
+  div {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.048);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  color: var(--text-color);
+  text-decoration: none;
+}

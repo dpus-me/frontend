@@ -1,0 +1,238 @@
+.my-container {
+  max-width: 900px;
+  overflow: hidden;
+  display: flex;
+  padding: 30px;
+}
+
+.active {
+  &::before {
+    display: block;
+    content: "";
+    width: 3px;
+    height: 20px;
+    background-color: #525af6;
+    margin-right: 4px;
+    margin-left: 2px;
+    border-radius: 10px;
+  }
+  height: 37px;
+  padding: 0 !important;
+  align-items: center;
+  opacity: 80% !important;
+}
+
+.remote {
+  button {
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.041);
+      opacity: 80%;
+    }
+    display: flex;
+    background-color: none;
+    border: 0;
+    background-color: transparent;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: start;
+    opacity: 50%;
+    transition: opacity 0.3s ease-in-out;
+    margin: 3px;
+    font-size: 15px;
+    color: var(--text-color);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px;
+  }
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.my-divider {
+  width: 1px;
+  height: 100%;
+  background-color: black;
+}
+
+.my-view {
+  flex: 1;
+}
+
+.profile-change-button {
+  .profile-hover {
+    display: none;
+  }
+  &:hover {
+    .profile-hover {
+      svg {
+        width: 80px;
+        height: 80px;
+        stroke: white;
+      }
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(26, 25, 25, 0.479);
+    }
+  }
+  img {
+    width: 150px;
+    height: 150px;
+    border: 0;
+    user-select: none;
+  }
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 20px;
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.user-profile-set {
+  h2 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    margin-top: 20px;
+    opacity: 80%;
+    font-size: 12px;
+  }
+  input {
+    &:focus {
+      outline: none;
+      border: 2px solid #525af69c;
+    }
+    width: 80%;
+    background-color: transparent;
+    border: 2px solid var(--text-color-disabled);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.profile-save {
+  width: 100px;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #525af6;
+  font-weight: 600;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.my-danger {
+  h2 {
+    margin: 0;
+    font-weight: 700;
+    color: rgb(243, 56, 56);
+  }
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  p {
+    margin: 5px 0;
+    font-size: 12px;
+  }
+  button {
+    &:hover {
+      background-color: rgb(243, 56, 56);
+      color: white;
+    }
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: rgb(243, 56, 56);
+    padding: 5px 20px;
+    border-radius: 50px;
+    border: 1px solid rgb(243, 56, 56);
+    cursor: pointer;
+  }
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.my-danger-divider {
+  width: 98%;
+  height: 1px;
+  background-color: rgba(243, 56, 56, 0.295);
+  margin: 5px auto;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 756px) {
+  .my-container {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+  }
+  .profile-change-button {
+    &:hover {
+      .profile-hover {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    img {
+      width: 200px;
+      height: 200px;
+    }
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .user-profile-set {
+    padding: 0;
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-profile-set-title {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    p {
+      font-size: 12px;
+    }
+  }
+  .profile-save {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  .my-danger {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

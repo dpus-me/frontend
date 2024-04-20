@@ -1,0 +1,32 @@
+{
+  "name": "dpus-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.0",
+    "@reduxjs/toolkit": "^2.2.3",
+    "@uiw/react-markdown-preview": "^5.1.1",
+    "@uiw/react-md-editor": "^4.0.4",
+    "axios": "^1.6.8",
+    "chart.js": "^4.4.2",
+    "gsap": "^3.12.5",
+    "js-confetti": "^0.12.0",
+    "js-cookie": "^3.0.5",
+    "next": "14.0.3",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-redux": "^9.1.1",
+    "redux": "^5.0.1",
+    "rehype-sanitize": "^6.0.0",
+    "sass": "^1.75.0",
+    "swiper": "^11.1.1"
+  }
+}

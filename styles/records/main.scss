@@ -1,0 +1,72 @@
+.record-menu {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.027);
+  padding: 40px 0;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.record-user-profile {
+  img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+  display: flex;
+}
+
+.record-user-info {
+  h1 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    font-size: 13px;
+  }
+  margin-left: 20px;
+}
+
+.record-chart {
+  width: 300px;
+  overflow: hidden;
+}
+
+.record-user-goal {
+  img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 0;
+    margin: 0 5px;
+    margin-right: 3px;
+  }
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .record-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .record-user-profile {
+    img {
+      margin: 0;
+      margin-bottom: 20px;
+      width: 150px;
+      height: 150px;
+    }
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+  .record-user-info {
+    margin: 0;
+    text-align: center;
+  }
+}

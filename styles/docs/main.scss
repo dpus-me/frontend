@@ -1,0 +1,49 @@
+.docs-info {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 12px;
+  }
+  padding: 40px;
+  padding-top: 20px;
+}
+.blank {
+  height: 20px;
+}
+
+blockquote {
+  background-color: rgba(0, 0, 0, 0.027);
+  margin: 0;
+  padding: 10px 20px;
+  border-left: 2px solid #525af6;
+}
+
+dd {
+  margin-left: 10px;
+  padding: 0;
+}
+
+ol {
+  li::before {
+    font-size: 12px;
+  }
+}
+
+.license-korean {
+  a {
+    color: #525af6;
+    text-decoration: none;
+  }
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

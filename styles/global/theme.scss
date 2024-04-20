@@ -1,0 +1,15 @@
+:root {
+  --background-color: #f7f7f7;
+  --body-color: white;
+  --text-color: #434343;
+  --text-color-disabled: rgba(67, 67, 67, 0.301);
+  --highlight-background: rgba(244, 244, 244, 0.605);
+}
+
+[data-theme="dark"] {
+  --background-color: #1d1d1d;
+  --body-color: #1e1e1e;
+  --text-color: white;
+  --text-color-disabled: rgba(252, 252, 252, 0.514);
+  --highlight-background: rgba(244, 244, 244, 0.021);
+}
