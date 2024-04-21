@@ -64,9 +64,21 @@
     }
     margin-bottom: 50px;
     flex-direction: column;
+    align-items: center;
   }
   .record-user-info {
     margin: 0;
     text-align: center;
+  }
+  .record-user-goal {
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      border-radius: 0;
+      margin: 0 5px;
+      margin-right: 3px;
+    }
+    margin-top: 20px;
   }
 }

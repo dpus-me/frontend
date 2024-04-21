@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import firstBanner from "@/public/banners/first.png";
 import secondBanner from "@/public/banners/second.png";
+import thirdBanner from "@/public/banners/third.png";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -16,7 +17,7 @@ import Link from "next/link";
 
 export default function HomeSwiper() {
   const [slide, setSlide] = useState(0);
-  const colors = ["#2f53c9", "#6526d1", "#2f53c9"];
+  const colors = ["#2f53c9", "#6526d1", "#9733da"];
 
   return (
     <>
@@ -69,6 +70,19 @@ export default function HomeSwiper() {
                     Dpus의 새로운 관리자를 모집하고 있어요!
                     <br />
                     저희와 함께 학생들의 편의를 증진시켜요!
+                  </p>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="swiper-bg">
+                <Image src={thirdBanner} alt="banner-first" />
+                <Link href="/teachers" className="swiper-text">
+                  <h2>선생님을 찾고 있어요! 📢</h2>
+                  <p>
+                    저희 커뮤니티에서 활동하는 여러 학생들을
+                    <br />
+                    손쉽게 관리하실 수 있을 거에요 :)
                   </p>
                 </Link>
               </div>

@@ -3,12 +3,12 @@ export const metadata = {
   description: "DPUS는 외부 사용자의 이메일의 무단 수집을 거부하고 있어요.",
 };
 
-export default function Brand() {
+export default function ProhibitionOfUnautorizedEmailCollection() {
   return (
     <div>
       <h1 className="page-title">🚫 이메일 무단수집 거부</h1>
       <p className="page-subtitle">
-        DPUS는 개인정보 보호를 위해 아래 정책을 따라요.
+        DPUS는 사용자 보호를 위해 아래 정책을 따라요.
       </p>
       <div className="docs-info">
         <h1>이메일 무단 수집 거부 정책</h1>

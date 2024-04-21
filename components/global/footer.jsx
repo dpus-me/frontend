@@ -63,8 +63,8 @@ export default function Footer() {
             <section className="legal">
               <h3>법적 고지</h3>
               <div className="footer-item-container">
-                <a>서비스 이용약관</a>
-                <a>개인정보처리방침</a>
+                <Link href="/docs/service_policy">서비스 이용약관</Link>
+                <Link href="/docs/privacy_policy">개인정보처리방침</Link>
                 <Link href="/docs/prohibition_of_unauthorized_email_collection">
                   이메일 무단수집거부
                 </Link>

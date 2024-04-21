@@ -7,6 +7,7 @@ import JSConfetti from "js-confetti";
 import axios from "axios";
 import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
 import { DpusReq } from "@/util/dpus-apis";
+import Link from "next/link";
 
 export default function Register() {
   // 상태를 관리하는 useState 훅들입니다.
@@ -20,6 +21,7 @@ export default function Register() {
     email: "",
     password: "",
   });
+  const [agreedPolicy, setAgreePolicy] = useState(false);
 
   const dpusReq = new DpusReq();
 
@@ -166,7 +168,7 @@ export default function Register() {
               <button
                 id="send-email"
                 onClick={SendEmail}
-                disabled={isEmailSended}
+                disabled={isEmailSended || email.length === 0}
               >
                 인증하기
               </button>
@@ -218,9 +220,6 @@ export default function Register() {
             <input
               placeholder="이름을 입력해 주세요. 실명이 아니어도 좋아요!"
               onChange={(e) => {
-                if (e.target.value === "") {
-                  return;
-                }
                 setRegisterData({
                   ...registerData,
                   username: e.target.value,
@@ -232,21 +231,39 @@ export default function Register() {
               type="password"
               placeholder="비밀번호를 입력해 주세요."
               onChange={(e) => {
-                if (e.target.value === "") {
-                  return;
-                }
                 setRegisterData({
                   ...registerData,
                   password: e.target.value,
                 });
               }}
             />
+            <div className="agree-policy">
+              <input
+                id="policy"
+                name="policy"
+                type="checkbox"
+                onChange={(e) => {
+                  setAgreePolicy(e.target.checked);
+                }}
+              />
+              <label for="policy">
+                <Link href="/docs/privacy_policy" target="_blank">
+                  개인정보처리방침
+                </Link>
+                과{" "}
+                <Link href="/docs/service_policy" target="_blank">
+                  서비스 이용약관
+                </Link>
+                에 동의해요.
+              </label>
+            </div>
             <button
               onClick={register}
               disabled={
                 registerData.email === "" ||
                 registerData.password === "" ||
-                registerData.username === ""
+                registerData.username === "" ||
+                !agreedPolicy
               }
             >
               완료하기 (2/2)

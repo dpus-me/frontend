@@ -5,7 +5,7 @@ export const metadata = {
   description: "DPUS는 이런 라이센스 정책을 채용했어요.",
 };
 
-export default function Brand() {
+export default function License() {
   return (
     <div>
       <h1 className="page-title">📖 라이선스 전문</h1>

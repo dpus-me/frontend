@@ -3,6 +3,7 @@
 import { useState } from "react";
 import MyAccount from "./modules/my-accounts";
 import Users from "./modules/user";
+import SetTeachers from "./modules/teachers";
 
 export default function MyRemote() {
   const [path, setPath] = useState("account");
@@ -10,6 +11,7 @@ export default function MyRemote() {
   const menus = {
     account: <MyAccount />,
     user: <Users />,
+    teacher: <SetTeachers />,
   };
 
   return (
@@ -44,6 +46,14 @@ export default function MyRemote() {
           }}
         >
           권한
+        </button>
+        <button
+          className={path === "teacher" ? "active" : ""}
+          onClick={() => {
+            setPath("teacher");
+          }}
+        >
+          선생님
         </button>
         <button
           onClick={() => {
